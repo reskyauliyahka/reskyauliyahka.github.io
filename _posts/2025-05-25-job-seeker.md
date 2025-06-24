@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Job Seeker Platform
-date: 2025-06-25 10:00:00 +0800
-updated: 2025-06-25 12:00:00 +0800
+date: 2025-06-24 10:00:00 +0800
+updated: 2025-06-24 12:00:00 +0800
 author: Resky Auliyah Kartini Askin
 img_path: /assets/gambar/
 image: web_jobseeker2.png
