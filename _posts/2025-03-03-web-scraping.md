@@ -10,7 +10,7 @@ tags: \["Python", "Web Scraping", "Selenium", "Data Science"]
 
 **Logbook & Tutorial: Web Scraping Data Tim NHL dengan Selenium**
 **Tanggal:** 25 Juni 2025
-**Disusun oleh:** \[Nama Kamu]
+**Disusun oleh:** Resky Auliyah Kartini Askin
 **Topik:** Web Scraping — Dropdown, Tabel, dan Pagination
 **Website Target:** [Scrape This Site – Forms Page](https://www.scrapethissite.com/pages/forms/)
 
