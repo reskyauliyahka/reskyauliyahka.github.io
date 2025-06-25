@@ -1,11 +1,11 @@
 ---
 
-title: "Logbook & Tutorial: Web Scraping Data Tim NHL dengan Selenium"
+title: Logbook & Tutorial Web Scraping Data Tim NHL dengan Selenium
 date: 2025-03-03
-author: "Resky Auliyah Kartini Askin"
+author: Resky Auliyah Kartini Askin
 image: /assets/gambar/web_scraping.png
-categories: ["Logbook", "Tutorial"]
-tags: ["Python", "Web Scraping", "Selenium", "Data Science"]
+categories: [Logbook, Tutorial]
+tags: [Python, Web Scraping, Selenium, Data Science]
 
 ---
 
