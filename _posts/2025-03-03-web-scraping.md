@@ -1,10 +1,10 @@
 ---
 
-title: Logbook & Tutorial Web Scraping Data Tim NHL dengan Selenium
+title: Web Scraping Data Tim NHL dengan Selenium
 date: 2025-03-03
 author: Resky Auliyah Kartini Askin
 image: /assets/gambar/web_scraping.png
-categories: [Logbook, Tutorial]
+categories: [Data Mining, Panduan]
 tags: [Python, Web Scraping, Selenium, Data Science]
 
 ---

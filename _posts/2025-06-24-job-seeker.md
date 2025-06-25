@@ -5,7 +5,7 @@ date: 2025-06-24 10:00:00 +0800
 updated: 2025-06-24 12:00:00 +0800
 author: Resky Auliyah Kartini Askin
 image: /assets/gambar/web_jobseeker2.png
-categories: [Projects]
+categories: [Projects, Web]
 tags: [Web App, Job Platform]
 ---
 
