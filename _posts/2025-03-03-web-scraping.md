@@ -15,7 +15,7 @@ Pada tutorial ini, kita akan melakukan web scraping terhadap halaman "Hockey Tea
 
 **Website Target:** [Scrape This Site – Forms Page](https://www.scrapethissite.com/pages/forms/)
 
-### 1. Tujuan
+### Tujuan
 
 Membangun scraper menggunakan Python dan Selenium untuk:
 
@@ -25,7 +25,7 @@ Membangun scraper menggunakan Python dan Selenium untuk:
 
 ---
 
-### 2. Deskripsi Website
+### Deskripsi Website
 
 * **Situs:** [https://www.scrapethissite.com/pages/forms/](https://www.scrapethissite.com/pages/forms/)
 * **Fitur:**
@@ -37,7 +37,7 @@ Membangun scraper menggunakan Python dan Selenium untuk:
 
 ---
 
-### 3. Tools dan Teknologi
+### Tools dan Teknologi
 
 | Library / Tool | Fungsi                                            |
 | -------------- | ------------------------------------------------- |
@@ -47,9 +47,9 @@ Membangun scraper menggunakan Python dan Selenium untuk:
 
 ---
 
-### 4. Tutorial Implementasi
+### Tutorial Implementasi
 
-#### a. Persiapan
+#### Persiapan
 
 Install dependensi:
 
@@ -60,9 +60,11 @@ pip install selenium pandas
 Download ChromeDriver sesuai versi Chrome dan tambahkan ke PATH:
 🔗 [https://sites.google.com/chromium.org/driver/](https://sites.google.com/chromium.org/driver/)
 
-#### b. Kode Lengkap Web Scraping (Terstruktur)
+#### Kode Lengkap Web Scraping (Terstruktur)
 
-##### 1. Import Library
+##### Import Library
+
+Bagian kode ini dimulai dengan mengimpor beberapa library yang dibutuhkan. selenium dipakai untuk ngontrol browser secara otomatis, supaya kita bisa ambil data dari halaman yang isinya dinamis (nggak bisa pakai requests atau BeautifulSoup biasa). pandas dipakai buat nyimpan data ke format tabel (CSV), dan time dipakai buat kasih jeda supaya halaman sempat loading sebelum data diambil. Selain itu, ada juga Select, WebDriverWait, dan expected_conditions yang dipakai buat nunggu elemen muncul dan ngatur dropdown-nya.
 
 ```python
 from selenium import webdriver
@@ -73,14 +75,18 @@ import pandas as pd
 import time
 ```
 
-##### 2. Inisialisasi WebDriver dan Buka Website
+##### Inisialisasi WebDriver dan Buka Website
+
+Setelah itu, kita buka Chrome pakai webdriver.Chrome() dan arahkan ke halaman yang mau di-scrape.
 
 ```python
 driver = webdriver.Chrome()
 driver.get("https://www.scrapethissite.com/pages/forms/")
 ```
 
-##### 3. Set Dropdown ke 100 Baris per Halaman
+##### Set Dropdown ke 100 Baris per Halaman
+
+Supaya datanya langsung tampil 100 per halaman, kita atur dulu dropdown-nya jadi "100". Ini penting biar lebih hemat waktu, jadi nggak perlu klik terlalu banyak halaman.
 
 ```python
 dropdown = WebDriverWait(driver, 10).until(
@@ -90,7 +96,11 @@ Select(dropdown).select_by_visible_text("100")
 time.sleep(2)
 ```
 
-##### 4. Looping untuk Scraping + Pagination
+##### Looping untuk Scraping + Pagination
+
+Proses scraping-nya pakai while True, artinya looping terus selama masih ada tombol “Next”. Di dalam loop, kita cari semua baris data di tabel, terus ambil isinya satu per satu (tiap kolom di baris itu), lalu simpan ke list all_data.
+
+Setelah selesai ambil data di satu halaman, kita cek apakah tombol "Next" masih aktif. Kalau masih bisa diklik, kita klik buat lanjut ke halaman selanjutnya. Kalau udah gak aktif (berarti halaman terakhir), kita keluar dari loop. Proses ini dibungkus dengan try-except biar kalau tombol “Next” nggak ketemu, program nggak langsung error tapi berhenti dengan baik.
 
 ```python
 all_data = []
@@ -116,7 +126,9 @@ while True:
         break
 ```
 
-##### 5. Simpan ke CSV
+##### Simpan ke CSV
+
+Kalau semua data udah terkumpul, kita ubah list all_data jadi tabel pakai pandas.DataFrame, terus simpan jadi file CSV dengan nama nhl_all_teams.csv. Terakhir, browser ditutup pakai driver.quit() karena proses scraping-nya udah selesai.
 
 ```python
 df = pd.DataFrame(all_data, columns=[
@@ -129,22 +141,7 @@ df.to_csv("nhl_all_teams.csv", index=False)
 driver.quit()
 ```
 
----
-
-### 5. Penjelasan Kode
-
-| Bagian Kode                                 | Penjelasan                                   |
-| ------------------------------------------- | -------------------------------------------- |
-| `webdriver.Chrome()`                        | Membuka browser Google Chrome                |
-| `Select(...).select_by_visible_text("100")` | Mengatur jumlah data ditampilkan per halaman |
-| `while True:`                               | Looping untuk menjelajahi semua halaman      |
-| `find_elements(...tr.team)`                 | Mengambil setiap baris data tim              |
-| `next_button.click()`                       | Klik halaman berikutnya                      |
-| DataFrame → CSV                             | Menyimpan hasil scraping ke file Excel/CSV   |
-
----
-
-### 6. Hasil
+### Hasil
 
 | File Output         | Jumlah Data                            |
 | ------------------- | -------------------------------------- |
@@ -158,7 +155,7 @@ driver.quit()
 
 ---
 
-### 7. Kendala dan Solusi
+### Kendala dan Solusi
 
 | Kendala                             | Solusi                                                       |
 | ----------------------------------- | ------------------------------------------------------------ |
@@ -168,7 +165,7 @@ driver.quit()
 
 ---
 
-### 8. Rencana Lanjutan
+### Rencana Lanjutan
 
 * Menambahkan fitur filter berdasarkan tahun tim
 * Menyimpan data ke database SQL
@@ -176,7 +173,7 @@ driver.quit()
 
 ---
 
-### 9. Referensi
+### Referensi
 
 * [Selenium Docs](https://www.selenium.dev/documentation/)
 * [ScrapeThisSite - Forms Page](https://www.scrapethissite.com/pages/forms/)
