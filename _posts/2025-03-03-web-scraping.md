@@ -13,7 +13,7 @@ Web scraping adalah teknik otomatisasi untuk mengambil informasi dari halaman we
 
 Pada tutorial ini, kita akan melakukan web scraping terhadap halaman "Hockey Teams: Forms, Searching and Pagination" dari situs Scrape This Site. Halaman tersebut menyajikan data statistik tim hoki NHL sejak tahun 1990 dalam bentuk tabel yang interaktif. Tantangan utama yang dihadapi adalah menangani elemen dropdown, paginasi, dan data yang di-render dinamis, yang memerlukan penggunaan Selenium sebagai browser automation tool.
 
-**Website Target:** [Scrape This Site – Forms Page](https://www.scrapethissite.com/pages/
+**Website Target:** [Scrape This Site – Forms Page](https://www.scrapethissite.com/pages/forms/)
 
 ### 1. Tujuan
 
