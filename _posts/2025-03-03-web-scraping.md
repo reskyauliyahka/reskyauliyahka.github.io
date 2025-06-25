@@ -4,17 +4,21 @@ title: "Logbook & Tutorial: Web Scraping Data Tim NHL dengan Selenium"
 date: 2025-03-03
 author: Resky Auliyah Kartini Askin
 image: /assets/gambar/web_scraping.png
-categories: \["Logbook", "Tutorial"]
-tags: \["Python", "Web Scraping", "Selenium", "Data Science"]
+categories: ["Logbook", "Tutorial"]
+tags: ["Python", "Web Scraping", "Selenium", "Data Science"]
 -------------------------------------------------------------
 
 **Logbook & Tutorial: Web Scraping Data Tim NHL dengan Selenium**
-**Tanggal:** 25 Juni 2025
+**Tanggal:** 03 Maret 2025
 **Disusun oleh:** Resky Auliyah Kartini Askin
 **Topik:** Web Scraping — Dropdown, Tabel, dan Pagination
 **Website Target:** [Scrape This Site – Forms Page](https://www.scrapethissite.com/pages/forms/)
 
 ---
+
+Web scraping adalah teknik otomatisasi untuk mengambil informasi dari halaman web menggunakan skrip pemrograman. Metode ini memungkinkan kita mengekstrak data secara efisien dari situs yang tidak menyediakan API publik.
+
+Pada tutorial ini, kita akan melakukan web scraping terhadap halaman "Hockey Teams: Forms, Searching and Pagination" dari situs Scrape This Site. Halaman tersebut menyajikan data statistik tim hoki NHL sejak tahun 1990 dalam bentuk tabel yang interaktif. Tantangan utama yang dihadapi adalah menangani elemen dropdown, paginasi, dan data yang di-render dinamis, yang memerlukan penggunaan Selenium sebagai browser automation tool.
 
 ### 1. Tujuan
 
