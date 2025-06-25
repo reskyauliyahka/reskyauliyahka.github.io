@@ -1,6 +1,6 @@
 ---
 title: Aplikasi Streamlit Sederhana-Konversi Mata Uang IDR
-date: 2025-06-25
+date: 2025-04-12
 author: Resky Auliyah Kartini Askin
 image: /assets/gambar/streamlit.png
 categories: [Tutorial, Streamlit]
