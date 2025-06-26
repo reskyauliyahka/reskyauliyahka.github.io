@@ -16,7 +16,7 @@ timezone:
 
 title: Resky Auliyah Kartini Askin # the main title
 
-tagline: Information System Student at Hasanuddin University # it will display as the subtitle
+tagline: Sistem Informasi - Universitas Hasanuddin # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
