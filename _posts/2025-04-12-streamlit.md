@@ -3,7 +3,7 @@ title: Aplikasi Streamlit Sederhana-Konversi Mata Uang IDR
 date: 2025-04-12
 author: Resky Auliyah Kartini Askin
 image: /assets/gambar/streamlit_contoh.png
-categories: [Data Mining, Panduan]
+categories: [Data Mining, Streamlit]
 tags: [Python, Streamlit, Aplikasi Sederhana]
 ---
 
