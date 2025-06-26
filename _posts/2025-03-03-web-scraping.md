@@ -4,7 +4,7 @@ title: Web Scraping Data Tim NHL dengan Selenium
 date: 2025-03-03
 author: Resky Auliyah Kartini Askin
 image: /assets/gambar/web_scraping.png
-categories: [Data Mining, Panduan]
+categories: [Data Mining, Web Scraping]
 tags: [Python, Web Scraping, Selenium, Data Science]
 
 ---
