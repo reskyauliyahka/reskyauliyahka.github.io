@@ -1,6 +1,6 @@
 ---
 title: "Strategi Testing"
-date: 2025-10-25
+date: 2025-10-29
 categories: [Artikel, Software Testing]
 author: "Resky Auliyah Kartini Askin"
 image: /assets/gambar/strategi.png
