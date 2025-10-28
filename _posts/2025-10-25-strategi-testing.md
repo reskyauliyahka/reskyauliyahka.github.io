@@ -7,7 +7,7 @@ image: /assets/gambar/strategi.png
 tags: [Testing, Strategi Testing, SDLC, Software Development Life Cycle, Black-box, White-box]
 ---
 
-# 🛡️ Strategi Testing: Pilar Kualitas dalam Pengembangan Perangkat Lunak
+# Strategi Testing: Pilar Kualitas dalam Pengembangan Perangkat Lunak
 
 Pengembangan perangkat lunak (*Software Development*) merupakan proses bertahap yang dikenal sebagai **Software Development Life Cycle (SDLC)**. Dalam siklus ini, **Testing & Integration** adalah fase penting yang memastikan produk akhir berkualitas, andal, dan bebas dari cacat (*bug*).
 
