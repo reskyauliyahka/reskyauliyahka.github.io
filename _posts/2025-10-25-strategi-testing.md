@@ -78,6 +78,7 @@ Menguji apakah *software* atau sistem berfungsi **sesuai dengan persyaratan fung
 Menguji **performa, keamanan, reliabilitas, dan aspek lain** dari *software* yang tidak terkait langsung dengan fungsi spesifiknya. Pengujian ini berfokus pada **bagaimana** suatu sistem bekerja, bukan **apa yang dilakukannya**.
 
 Jenis-jenis Non-Fungsional Testing (berdasarkan Domain):
+
 | Domain Testing | Fokus Utama | Tujuan |
 | :--- | :--- | :--- |
 | **Performance Testing** | Kecepatan, responsivitas, dan stabilitas di bawah beban tertentu. | Memastikan *software* mampu menangani beban kerja tinggi. |
