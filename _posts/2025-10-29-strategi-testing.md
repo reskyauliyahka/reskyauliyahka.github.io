@@ -3,7 +3,7 @@ title: "Strategi Testing"
 date: 2025-10-29
 categories: [Artikel, Software Testing]
 author: "Resky Auliyah Kartini Askin"
-image: D:\assets\gambar\strategi.png
+image: /assets/gambar/strategi.png
 tags: [Testing, Strategi Testing, SDLC, Software Development Life Cycle, Black-box, White-box]
 ---
 
