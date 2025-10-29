@@ -1,6 +1,6 @@
 ---
 title: "Testing Plan"
-date: 2025-10-29 08:00:00 +0700
+date: 2025-10-26
 categories: [Artikel, Software Testing]
 tags: [test-plan, software-testing, quality-assurance]
 author: "Resky Auliyah Kartini Askin"
