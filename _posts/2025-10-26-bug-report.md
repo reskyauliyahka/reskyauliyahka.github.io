@@ -1,6 +1,6 @@
 ---
 title: "Test Scenario, Test Case, dan Bug Report"
-date: 2025-10-26
+date: 2025-10-27
 categories: [Artikel, Software Testing]
 tags: [test-scenario, test-case, bug-report, software-testing, quality-assurance]
 author: "Resky Auliyah Kartini Askin"
