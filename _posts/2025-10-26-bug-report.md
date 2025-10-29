@@ -77,6 +77,7 @@ Ketika hasil aktual tidak sesuai dengan hasil yang diharapkan (*Expected Result*
 Setiap *bug* diklasifikasikan berdasarkan dua metrik utama untuk menentukan urgensi perbaikannya:
 
 #### Severity (Tingkat Dampak pada Fungsi Sistem)
+
 | Severity | Deskripsi |
 | :--- | :--- |
 | **Critical** | Sistem gagal total atau data rusak. |
@@ -84,7 +85,8 @@ Setiap *bug* diklasifikasikan berdasarkan dua metrik utama untuk menentukan urge
 | **Minor (Medium)** | Bug kecil yang menimbulkan ketidaknyamanan pengguna. |
 | **Low** | Bug tidak memengaruhi sistem secara signifikan. |
 
-#### Priority (Tingkat Urgensi Perbaikan)
+#### Priority (Tingkat Urgensi Perbaikan)\
+
 | Priority | Deskripsi |
 | :--- | :--- |
 | **P1 - Urgent/Critical** | Harus segera diperbaiki karena sangat berdampak. |
