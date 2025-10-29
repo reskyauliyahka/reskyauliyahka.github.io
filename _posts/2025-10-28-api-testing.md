@@ -114,6 +114,7 @@ Response adalah balasan dari server setelah memproses request.
 
 **Komponen Utama:**
 - **Status Code:** Kode numerik hasil eksekusi.
+
   | Kode | Arti |
   | :--- | :--- |
   | 200 | OK – Permintaan berhasil |
