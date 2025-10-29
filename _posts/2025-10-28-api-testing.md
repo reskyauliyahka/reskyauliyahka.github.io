@@ -1,6 +1,6 @@
 ---
 title: "API Testing"
-date: 2025-10-29
+date: 2025-10-28
 categories: [Artikel, Software Testing]
 tags: [api-testing, postman, software-quality, automation-testing]
 author: "Resky Auliyah Kartini Askin"
